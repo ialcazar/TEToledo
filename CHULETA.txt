@@ -1,0 +1,83 @@
+git init: iniciar el repo
+
+Configuración de usuario e email:
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+
+Comprometer cambios en los ficheros:
+1.- git add <nombre-del-fichero>
+2.a git reset HEAD fichero //Deshace el 1.
+2.- git commit -m"mensaje de texto"
+
+	Truco
+	Si el fichero es TRACKED, para comprometer los cambios que he realizado
+	puedo con:
+	
+	git commit -am "mensaje"
+
+Deshacer los cambios del area de trabajo
+git checkout -- ficheros
+ 
+
+Listar el conjunto de commits del repo
+git log --oneline
+
+Conocer el estado del repositorio
+git status
+
+RAMAS
+---------------------
+1.- Crear rama
+git branch nombre-rama
+
+2.- Cambiar de rama 
+git checkout nombre-rama
+
+3.- Mostrar todas las ramas
+git branch -a
+
+3.- Fusión de ramas
+3.1. Me posiciono en la rama destino (master)
+3.2. git merge ramaAFusionar
+
+
+Ejercicio 1:
+
+1. Crear un repositorio Git
+2. Crear un fichero y hacer commit
+3. Crear otro fichero y hacer commit
+4. Modificar uno de los dos ficheros y hacer commit
+5. borrar fichero 2 y hacer commit
+
+Resultado:4 commits en el repo.
+
+
+Ejercicio 2:
+1.Crear un fichero nuevo
+2.Commit del fichero
+3. Modificar el fichero
+4. git commit -am
+
+Ejercicio 3:
+
+1.Crear nuevo repo
+2.En master:
+2.1 Crear un fichero nuevoMaster.txt añadir una nueva linea 
+y hacer un commit.
+2.2 Crear otro fichero "f1.txt" y añadir una nueva linea
+y hacer commit.
+
+3.Crear una nueva rama "nuevarama"
+4.Posicionarme en "nuevarama"
+5.Modificar la linea de f1.txt.
+
+6.Hacer la fusión a master y resolver conflict
+6.1 Abrir el fichero con conflicto
+6.2 Decidir el código que va (2 lineas)
+6.3 git add del fichero
+6.4 git commit del fichero.
+
+
+
+
