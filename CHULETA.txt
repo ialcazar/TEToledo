@@ -22,6 +22,7 @@ git checkout -- ficheros
 
 Listar el conjunto de commits del repo
 git log --oneline
+git log --oneline --decorate --graph --all
 
 Conocer el estado del repositorio
 git status
@@ -72,11 +73,14 @@ y hacer commit.
 4.Posicionarme en "nuevarama"
 5.Modificar la linea de f1.txt.
 
-6.Hacer la fusión a master y resolver conflict
-6.1 Abrir el fichero con conflicto
-6.2 Decidir el código que va (2 lineas)
-6.3 git add del fichero
-6.4 git commit del fichero.
+6. Volver a Master
+6.1 Modificar la misma linea de master en f1.txt
+
+7.Hacer la fusión a master y resolver conflict
+7.1 Abrir el fichero con conflicto
+7.2 Decidir el código que va (2 lineas)
+7.3 git add del fichero
+7.4 git commit del fichero.
 
 
 
